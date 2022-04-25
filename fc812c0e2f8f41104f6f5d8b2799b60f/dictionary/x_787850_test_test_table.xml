@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="test table" max_length="40" name="x_787850_test_test_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="encode_utf8=false" label="test 1" max_length="32" name="test_1" reference="imp_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="test 2" max_length="40" name="test_2" type="string"/>
+        <index name="index">
+            <element name="test_1"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
